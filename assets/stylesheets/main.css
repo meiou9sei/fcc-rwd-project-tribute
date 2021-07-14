@@ -54,10 +54,6 @@ table {
 	=============================
 */
 
-.container {
-	
-}
-
 body {
 	background: hsl(180, 74%, 5%);
 	font-family: 'Open Sans', sans-serif;
@@ -73,12 +69,12 @@ main {
 }
 
 img, figcaption {
-	width: 88%;
+	width: 95%;
 	margin: auto;
 }
 
-#img-caption, #img-caption2 {
-	margin-top: 10px;
+.img-caption {
+	margin-top: 7px;
 }
 
 figure {
@@ -95,12 +91,16 @@ figure {
 */
 
 h1 {
-	font-size: 72px;
-	padding: 2% 10%;
-	margin: 	
+	font-size: 144px;
+	padding: 2%;
+	margin: 0 auto;	
+	color: rgb(168, 221, 148);
+	background: -webkit-linear-gradient(rgb(168, 221, 148),rgb(15, 180, 117));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-h2 {
+h2, .border-color {
 	border-top: solid;
 	border-width: 3px;
 	font-size: 36px;
@@ -109,6 +109,14 @@ h2 {
 	margin: auto;
 	font-weight: bold;
 	margin-top: 35px;
+	color: rgb(168, 221, 148);
+	background: -webkit-linear-gradient(rgb(168, 221, 148),rgb(15, 180, 117));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.border-color {
+	padding: 0px;
 }
 
 p, li {
@@ -116,13 +124,6 @@ p, li {
 	max-width: 550px;
 	margin: 0 auto 25px auto;
 	line-height: 20px;
-}
-
-ul {
-	border-bottom: solid;
-	border-width: 3px;
-	max-width: 550px;
-	margin: auto;
 }
 
 .blockquote-container {
@@ -148,10 +149,10 @@ aside {
 blockquote {
 	font-style: italic;
 	padding: 10px;
-	width: 50%;
+	width: 80%;
 	margin: 20px auto;
 	border-radius: 5px;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 blockquote::before {
@@ -186,6 +187,7 @@ a:hover {
 	margin: 20px auto;
 	text-align: center;
 	max-width: 70%;
+	color: rgb(168, 221, 148);
 }
 
 /*
@@ -193,3 +195,24 @@ a:hover {
 	Responsive Design
 	=============================
 */
+
+@media (max-width: 550px) {
+	img {
+		width: 95%;
+		margin: auto;
+	}
+	figure {
+		padding: 10px 15px 5px 15px;
+		width: 90%;
+		margin: auto;
+	}
+	.img-caption {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 750px){
+	h1 {
+		font-size: 72px;
+	}
+}
