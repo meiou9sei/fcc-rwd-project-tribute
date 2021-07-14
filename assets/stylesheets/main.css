@@ -69,7 +69,8 @@ main {
 }
 
 img, figcaption {
-	width: 95%;
+	display: block;
+	max-width: 100%;
 	margin: auto;
 }
 
@@ -149,7 +150,8 @@ aside {
 blockquote {
 	font-style: italic;
 	padding: 10px;
-	width: 80%;
+	width: 75%;
+	max-width: 750px;
 	margin: 20px auto;
 	border-radius: 5px;
 	font-size: 30px;
