@@ -72,8 +72,9 @@ main {
 	color: rgb(223, 221, 235);
 }
 
-img figcaption {
+img, figcaption {
 	width: 88%;
+	margin: auto;
 }
 
 #img-caption, #img-caption2 {
@@ -93,6 +94,41 @@ figure {
 	=============================
 */
 
+h1 {
+	font-size: 72px;
+	padding: 2% 10%;
+	margin: 	
+}
+
+h2 {
+	border-top: solid;
+	border-width: 3px;
+	font-size: 36px;
+	max-width: 550px;
+	padding: 25px 0px;
+	margin: auto;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+p, li {
+	text-align: left;
+	max-width: 550px;
+	margin: 0 auto 25px auto;
+	line-height: 20px;
+}
+
+ul {
+	border-bottom: solid;
+	border-width: 3px;
+	max-width: 550px;
+	margin: auto;
+}
+
+.blockquote-container {
+	margin-bottom: 30px;
+}
+
 strong, b {
 	font-weight: bold;
 }
@@ -101,33 +137,19 @@ em, i {
 	font-style: italic;
 }
 
-h1 {
-	font-size: 72px;
-	padding: 2% 10%;
-	margin: 	
-}
-
-h2 {
-	font-size: 24px;
-	padding: 2% 10%;
-	margin: 	
-}
-
-p, li {
-	text-align: left;
-	max-width: 550px;
-	margin: 0 auto 25px auto;
-}
-
 .subheaders {
 	text-align: center;
+}
+
+aside {
+	font-family:'Times New Roman', Times, serif;
 }
 
 blockquote {
 	font-style: italic;
 	padding: 10px;
 	width: 50%;
-	margin: auto;
+	margin: 20px auto;
 	border-radius: 5px;
 	font-size: 24px;
 }
@@ -165,3 +187,9 @@ a:hover {
 	text-align: center;
 	max-width: 70%;
 }
+
+/*
+	=============================
+	Responsive Design
+	=============================
+*/
