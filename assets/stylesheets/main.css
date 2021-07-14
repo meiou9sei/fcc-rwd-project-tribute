@@ -192,6 +192,10 @@ a:hover {
 	color: rgb(168, 221, 148);
 }
 
+#notice {
+	font-size: 12px;
+}
+
 /*
 	=============================
 	Responsive Design
