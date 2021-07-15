@@ -166,9 +166,16 @@ blockquote::after {
 }
 
 a {
-	color: rgb(223, 221, 235);
+	color: rgb(23, 219, 253);
+	text-decoration: none;
 }
 a:hover {
+	color: rgb(47, 129, 58);
+}
+#footer-text a {
+	color: rgb(138, 76, 60);
+}
+#footer-text a:hover {
 	color: rgb(47, 129, 58);
 }
 
@@ -181,7 +188,8 @@ a:hover {
 #footer-text {
 	text-align: center;
 	margin: auto;
-	line-height: 30px;
+	line-height: 20px;
+	max-width: 100%;
 }
 
 #read-more {
@@ -194,6 +202,15 @@ a:hover {
 
 #notice {
 	font-size: 12px;
+}
+
+small {
+	font-size: 12px;
+}
+
+#copyright-text {
+	margin: 10px auto;
+	text-align: center;	
 }
 
 /*
